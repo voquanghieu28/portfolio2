@@ -35,6 +35,36 @@
   ======================================================== -->
 </head>
 
+<style>
+  .wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 42ch;
+  animation: typing 2s steps(42), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+</style>
+
 <body>
 
   <!-- ======= Header ======= -->
@@ -44,7 +74,7 @@
       <h1><a href="index.html">Hieu Vo</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>software developer</span> from Ottawa</h2>
+      <h2><div class="typing-demo">I'm a passionate <span>software developer</span> from Ottawa</div></h2>
 
       <nav id="navbar" class="navbar">
         <ul>
