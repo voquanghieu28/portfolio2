@@ -32,6 +32,11 @@ body::before {
   }
 }
 
+.badges img {
+  width: 70px;
+  height: 70px;
+}
+
 a {
   color: #18d26e;
   text-decoration: none;
@@ -40,6 +45,10 @@ a {
 a:hover {
   color: #35e888;
   text-decoration: none;
+}
+
+.resume-item p {
+  float: right;
 }
 
 h1,
@@ -103,16 +112,22 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+
   color: #fff;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
+  /*
+  Changes for the badge
   width: 40px;
   height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  */
+  width: 70px;
+  height: 70px;
 }
 #header .social-links a:hover {
-  background: #18d26e;
+  /*background: #18d26e;*/
 }
 @media (max-width: 992px) {
   #header h1 {
@@ -372,8 +387,7 @@ section .container {
 }
 .about-me .content ul li {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .about-me .content ul strong {
   margin-right: 10px;
@@ -573,7 +587,7 @@ section .container {
 }
 .resume .resume-item h4 {
   line-height: 18px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -583,15 +597,20 @@ section .container {
 .resume .resume-item h5 {
   font-size: 16px;
   background: rgba(255, 255, 255, 0.15);
-  padding: 5px 15px;
+  padding: 5px 8px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
 }
+.resume .resume-item p {
+  font-size: 15px;
+}
 .resume .resume-item ul {
+  font-size: 15px;
   padding-left: 20px;
 }
 .resume .resume-item ul li {
+  font-size: 15px;
   padding-bottom: 10px;
 }
 .resume .resume-item:last-child {
